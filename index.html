@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+height: 100%;
+font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+background-position: center;
+background-size: cover;
+background-image: url("https://images.squarespace-cdn.com/content/v1/5f85fd2bde4e7e3a74e2861f/1606028446694-DOUUFF9CTZFLLS1EFVT2/eric-parks-unsplash.jpg?format=2500w");
+min-height: 75%;
+}
+
+.menu {
+display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+<div class="w3-row w3-padding w3-black">
+<div class="w3-col s3">
+<a href="#" class="w3-button w3-block w3-black">Home</a>
+</div>
+<div class="w3-col s3">
+<a href="#about" class="w3-button w3-block w3-black">About Us</a>
+</div>
+<div class="w3-col s3">
+<a href="#menu" class="w3-button w3-block w3-black">Menu</a>
+</div>
+<div class="w3-col s3">
+<a href="#where" class="w3-button w3-block w3-black">Where</a>
+</div>
+</div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+<span class="w3-tag">open from 8am to 4:30pm</span>
+</div>
+<div class="w3-display-middle w3-center">
+<span class="w3-text-white" style="font-size:90px"><p>The best</p><p>coffee</p><p>in town </p><p></p><p></p></span>
+</div>
+<div class="w3-display-bottomright w3-center w3-padding-large">
+<span class="w3-text-white">198 Watford Road, Croxley Green</span>
+</div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+<div class="w3-content" style="max-width:700px">
+<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Welcome to The Kitchen Croxley</span></h5>
+<p>Welcome to The Kitchen Croxley – we are so pleased you have found us.</p>
+<p>We’ve been a part of the community here in Croxley since 2014 and feel very relieved and thankful that we have so far survived the various lockdowns and challenges that the last two years have thrown at us.</p>
+<p>We have done so by adapting our business to provide takeaway drinks, cakes and sandwiches. This includes beautiful Afternoon Teas (changing with the seasons and special occasions), and great value Meal Deals.</p>
+<p>We are also selling Craft Beers from local breweries and a selection of good value wines. Along with a small selection of Cake Decorating items such as sprinkles and frosting, and lots of seasonal surprises and gifts.</p>
+<p>With the resumption of Weddings, Birthday Parties and other large gatherings our Studio is once again busy baking and decorating beautiful bespoke cakes for all occasions. It even has its own Instagram page now @thestudioatthekitchen</p>
+<p>Our Tearoom is open and you are now very welcome to visit and sit in. Alternatively we look forward to creating something special for you or your friends and family to enjoy at home!</p>
+<p>Call us on 01923 805896 to chat about how we can help you.</p>
+<p></p>
+<p></p>
+<p></p>
+<div class="w3-panel w3-leftbar w3-light-grey">
+<p><i>Afternoon Tea Week on And The Winners Are…</i></p>
+<p><i>Cake Diary: The Kitchen, Croxley Green – Tea & Happiness on About</i></p>
+<p><i>Linda De Rose on It’s all about the cake!</i></p>
+<p><i>Judith Bruni on New Year, New Beginnings</i></p>
+</div>
+<img src="https://static.scientificamerican.com/sciam/cache/file/4A9B64B5-4625-4635-848AF1CD534EBC1A_source.jpg?w=590&h=800&CD228F20-9084-4631-B001EDC4A2301564" style="width:100%;max-width:1000px;margin-top:32px;">
+<p><strong>Monday - Thursday:
+</strong> 8:00 - 16:30</p>
+<p><strong>Friday:
+</strong> 8:00 - 18:00</p>
+<p><strong>Saturday:
+</strong> 8:00 - 19:00</p>
+<p><strong>Sunday:
+</strong> 10:00 - 16:00</p>
+<p><strong>Bank Holiday:
+</strong> 10:00 - 18:00</p>
+</div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+<div class="w3-content" style="max-width:700px">
+<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">The Menu</span></h5>
+<div class="w3-row w3-center w3-card w3-padding">
+<a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+<div class="w3-col s6 tablink">Drinks</div>
+</a>
+<a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+<div class="w3-col s6 tablink">Cakes</div>
+</a>
+</div>
+<div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+<h5>Single Espresso 1.30 </h5>
+<p class="w3-text-grey">Double Espresso 2.30 </p>
+<h5>Macchiato 2.50 </h5>
+<p class="w3-text-grey">Americano 2.30 </p>
+<h5>Cappuccino 2.90 </h5>
+<p class="w3-text-grey">Latte 2.90 </p>
+<h5>Flat White 2.90 </h5>
+<p class="w3-text-grey">Mocha 3.20 </p>
+<h5>Babyccino 0.80 </h5>
+<p class="w3-text-grey">Iced Latte 2.90 </p>
+<h5>Iced Mocha 3.20</h5>
+<p class="w3-text-grey">Iced coffee 4.00</p>
+<h5></h5>
+<p class="w3-text-grey"></p>
+<h5></h5>
+<p class="w3-text-grey"></p>
+<h5></h5>
+<p class="w3-text-grey"></p>
+<h5></h5>
+<p class="w3-text-grey"></p>
+</div>
+<div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+<h5>Loaf Cakes 3.00 </h5>
+<p class="w3-text-grey">Flapjacks 3.00</p>
+<h5>Bread Pudding 3.00</h5>
+<p class="w3-text-grey">Rainbow Cake 3.00 </p>
+<h5>Brownies 3.50 </h5>
+<p class="w3-text-grey">Cupcakes 2.50 </p>
+<h5>Millionaire Shortbread 3.50</h5>
+<p class="w3-text-grey">Rocky Road 3.50 Cookies 1.50</p>
+<h5>Strawberry cake 4.50</h5>
+<p class="w3-text-grey">Raspberry cake 4.50</p>
+<h5>Chocolate Cake 5.00</h5>
+<p class="w3-text-grey">Carrot Cake 8.00</p>
+<h5></h5>
+<p class="w3-text-grey"></p>
+<h5></h5>
+<p class="w3-text-grey"></p>
+<h5></h5>
+<p class="w3-text-grey"></p>
+<h5></h5>
+<p class="w3-text-grey"></p>
+</div>
+<img src="https://d2864n0kuhyrtt.cloudfront.net/files/Food-and-Drink/_AUTOx174_fit_center-center/Cream-Tea-small.jpg?mtime=20210916113612" style="width:100%;max-width:1000px;margin-top:32px;">
+</div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+<div class="w3-content" style="max-width:700px">
+<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+<p>We are located in Croxley, on Watford Road near Croxley Green tube station</p>
+<img src="https://images.squarespace-cdn.com/content/v1/5f85fd2bde4e7e3a74e2861f/1606028446694-DOUUFF9CTZFLLS1EFVT2/eric-parks-unsplash.jpg?format=2500w*cdGm-_GkHlZAwG_L.jpg" class="w3-image" style="width:100%">
+<p><span class="w3-tag">Best service:
+</span> The Kitchen is again open for you to enjoy sitting in our tearoom. We would love to welcome you and we are open every day from 10.00am.</p>
+<p>In addition you can order anything from a simple sandwich to a lunchtime meal deal, full Afternoon Tea or platter of scones and cakes to collect and enjoy at home. Please use the form below to reserve a table or place an order.</p>
+<p>Afternoon Tea at The Kitchen has been compared to some of the top hotels in London, and frequently receives five star reviews.</p>
+<p>Check out Trip Advisor to see what many other happy customers have had to say about us!</p>
+<p>Place your orders online or call us.</p>
+<p>Bring a friend.</p>
+<p>Reservations, orders and any questions:</p>
+<form action="/action_page.php" target="_blank">
+<p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+<p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+<p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date" required name="date" value="2021-11-16T20:00"></p>
+<p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Messages / Special requests" required name="Message"></p>
+<p><button class="w3-button w3-black" type="submit">button</button></p>
+</form>
+</div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+<p>Created by <a href="https://www.devdev.com" title="W3.CSS" target="_blank" class="w3-hover-text-green">DevDev</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+var i, x, tablinks;
+x = document.getElementsByClassName("menu");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tablink");
+for (i = 0; i < x.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+}
+document.getElementById(menuName).style.display = "block";
+evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
